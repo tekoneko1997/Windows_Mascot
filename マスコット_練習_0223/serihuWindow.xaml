@@ -1,0 +1,38 @@
+﻿<Window x:Class="マスコット_練習_0223.serihuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:マスコット_練習_0223"
+        xmlns:chrome="http://schemes.grabacr.net/winfx/2014/chrome"
+        mc:Ignorable="d"
+        WindowStyle="None" 
+        Background="#FF8923E5"
+        ResizeMode="NoResize"
+        Title="結月ゆかり" Height="122.4" Width="320" >
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="30"
+                     ResizeBorderThickness="4"/>
+    </WindowChrome.WindowChrome>
+   <!-- <i:Interaction.Behaviors>
+        <chrome:MetroChromeBehaviors  ActiveBrush="DeepSkyBlue"
+                                      InactiveBrush="DarkGray"
+                                      Mode="VisualStudio2013" />
+    </i:Interaction.Behaviors>
+    -->
+    <Grid>
+
+        <!--<Image Source="nc71997.png" Margin="0,0,-0.2,0.4"/>  ws.toolwindow-->
+
+        <TextBlock x:Name="serihu"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Background="White" Width="294" Height="48" Margin="10,10,0,0" Foreground="Red" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="10,58,0,0" VerticalAlignment="Top" Width="294" Background="Black">
+            <TextBlock x:Name="txtblk" TextWrapping="Wrap"  Foreground="#FFE51515"/>
+        </Border>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="101,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
+
+
+    </Grid>
+</Window>
